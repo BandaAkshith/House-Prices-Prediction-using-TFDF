@@ -12,7 +12,7 @@ Models that can forecast housing prices can provide policy makers and economists
 The housing dataset is available on Kaggle under “House Prices: Advanced Regression Techniques”. The “train.csv” file contains the training data and “test.csv” contains the testing data. The training data contains data for 1460 rows which corresponds to 1460 house’s data and   80 columns which correspond to the feature of those houses. Similarly, the testing data contains data of 1461 houses and their 79 attributes.  
 
 ## Feature Engineering
-- A Jupyter notebook with Python kernel was used to perform all the tests. Sklearn was the primary library used for all data modelling and optimisation. Pandas and NumPy library were also frequently used for data loading, manipulation and transformation. Seaborn and matplotlib were used to plot visualisations.
+- A Google Colab with Python kernel was used to perform all the tests. Sklearn was the primary library used for all data modelling and optimisation. Pandas and NumPy library were also frequently used for data loading, manipulation and transformation. Seaborn and matplotlib were used to plot visualisations.
 
 - Given a large dataset, pre-processing the data was an important task. First the Id column was dropped from the features because it is not required for prediction. Scatter plot was used to check for any large outliers which may lead to biased predictions. “GrLivArea” which is the second most correlated column to the label was found to have outliers. The data points between “GrLivArea” greater than 4000 and sale price less than 300,000 were deleted in order to prevent skewed predictions. Similarly, for the data points where “EnclosedPorch” is greater than 400  and  sale price  greater  that    700,000
 were removed. 
